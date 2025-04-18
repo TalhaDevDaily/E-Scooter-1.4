@@ -1,0 +1,316 @@
+/***********Navigation Bar***********/
+.main-nav {
+  padding: 2.6rem 0;
+  border-bottom: 0.1rem solid #eae8f3;
+}
+
+.main-nav .logo {
+  width: 7rem;
+}
+
+.main-nav ul {
+  gap: 7.5rem;
+}
+
+.main-nav ul li a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.main-nav ul li a::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 0.1rem;
+  background-color: #42454a;
+  width: 0;
+}
+
+.main-nav ul li a:hover::after {
+  width: 100%;
+  transition: width linear 0.3s;
+}
+
+.main-nav .nav-btn {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: row;
+}
+
+.main-nav .nav-btn a {
+  padding: 1.6rem 2.6rem;
+  background-color: #42454a;
+  color: #fff;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+
+.main-nav .nav-btn a:hover {
+  background-color: #fff;
+  color: #42454a;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/***********Hero Section***********/
+.section-hero {
+  margin-top: 8.4rem;
+  position: relative;
+}
+
+h1 {
+  width: 58.6rem;
+  font-size: 9rem;
+  line-height: 9.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.h1-span {
+  font-weight: 700;
+}
+
+.header-underline {
+  margin-top: 9.3rem;
+  display: inline-block;
+  width: 33.5rem;
+  height: 0.4rem;
+  background-color: #42454a;
+}
+
+.hero-textbox p {
+  margin-top: 6.2rem;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  width: 35.3rem;
+  letter-spacing: 1%;
+}
+
+.hero-btn {
+  width: 43rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buy Now Button */
+button {
+  margin-top: 6rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: 2rem;
+}
+
+button.hero-cta-btn {
+  width: 18rem;
+  height: auto;
+}
+
+button.hero-cta-btn .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 5.8rem;
+  height: 5.8rem;
+  background: #42454a;
+}
+
+button.hero-cta-btn .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: transparent;
+}
+
+button.hero-cta-btn .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 2.4rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.hero-cta-btn .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.39rem;
+  right: 0.0625rem;
+  width: 1rem;
+  height: 1rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.hero-cta-btn .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.2rem 2rem 0 1.2rem;
+  margin: 0 0 0 2rem;
+  color: #42454a;
+  font-weight: 500;
+  text-align: right;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: transparent;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+.video-playback {
+  display: flex;
+  justify-content: space-between;
+  width: 18.8rem;
+  height: 8rem;
+}
+
+.video-playback p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  width: 8.7rem;
+}
+
+/* Video Playback Button */
+.button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #718176;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  transition: transform 200ms;
+  font-weight: 600;
+}
+
+.button__text {
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+
+  > span {
+    position: absolute;
+    transform: rotate(calc(19deg * var(--index)));
+    inset: 7px;
+  }
+}
+
+.button__circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: transparent;
+  color: #7808d0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover {
+  background: transparent;
+  transform: scale(1.2);
+}
+
+.button:hover .button__icon {
+  color: #000;
+}
+
+.button:hover .button__icon:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+@keyframes text-rotation {
+  to {
+    rotate: -360deg;
+  }
+}
+
+/* Hero Image */
+.hero-img {
+  display: inline-block;
+  width: 85.6rem;
+  height: 64.6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all linear 0.4s;
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero-img-background {
+  position: absolute;
+  content: "";
+  width: 100rem;
+  height: 56rem;
+  border-radius: 30rem;
+  background-color: #dbdbdb;
+  top: 6rem;
+  right: -49rem;
+  animation: second 1s ease-out forwards;
+}
+
+@keyframes second {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
