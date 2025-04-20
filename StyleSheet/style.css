@@ -280,3 +280,33 @@ button:hover .button-text {
     transform: translateX(0);
   }
 }
+
+/***********Features Section***********/
+.section-features {
+  margin-top: 20.9rem;
+}
+
+.feature {
+  width: 17.5rem;
+  height: 13.7rem;
+  border-radius: 0.7rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.feature h2 span {
+  font-size: 4rem;
+}
+
+.feature p {
+  font-size: 1.3rem;
+}
