@@ -310,3 +310,209 @@ button:hover .button-text {
 .feature p {
   font-size: 1.3rem;
 }
+
+/***********Product Section***********/
+.section-product {
+  margin-top: 12.7rem;
+}
+
+.product-information-textbox {
+  position: relative;
+}
+
+.product-img {
+  position: absolute;
+  width: 74.8rem;
+  top: 120%;
+  left: -20%;
+}
+
+.product-information {
+  margin-top: 14.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  justify-self: end;
+  width: 46.4rem;
+}
+
+.information {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.information img {
+  width: 4.9rem;
+}
+
+.information p {
+  font-size: 2rem;
+  align-self: center;
+}
+
+/***********Motor Section***********/
+.section-motor {
+  margin-top: 24.8rem;
+}
+
+.motor {
+  margin-top: 4.9rem;
+}
+
+.motor:hover {
+  scale: 1.1;
+  transition: all linear 0.4s;
+}
+
+/***********Accessories Section***********/
+.section-accessories {
+  margin-top: 31.5rem;
+}
+
+.accessories-info {
+  margin-top: 11.2rem;
+  margin-top: 14.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  width: 35rem;
+  position: relative;
+}
+
+.flex-end {
+  justify-self: end;
+}
+
+.accessories1 {
+  position: absolute;
+  width: 136.7rem;
+  top: 30%;
+  left: 300%;
+  scale: 2.5;
+}
+
+.accessories2 {
+  position: absolute;
+  width: 136.7rem;
+  top: 30%;
+  left: -313%;
+  scale: 2.5;
+}
+
+.accessories-message {
+  margin: 7.4rem auto 0; /* Correct shorthand for top, horizontal, and bottom margins */
+  width: 57rem;
+  height: 9.4rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #42454a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.accessories-message .accessories-message-heading {
+  font-size: 3rem !important;
+  font-weight: bold !important;
+}
+
+/***********Gallery Section***********/
+.section-gallery {
+  margin-top: 12.7rem;
+}
+
+.gallery-img-1 {
+  margin-top: 30.2rem;
+  width: 63.3rem;
+}
+
+.gallery-img-2 {
+  margin-top: 11.2rem;
+  width: 63.3rem;
+}
+
+.gallery-img-3 {
+  margin-top: 9.6rem;
+  width: 63.3rem;
+}
+
+.gallery-textbox {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
+.gallery-textbox a {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 57rem;
+  height: 9.4rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #42454a;
+  color: #42454a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***********Colors Section***********/
+.section-colors {
+  margin-top: 12.8rem;
+}
+
+.slide-show-box {
+  position: relative;
+}
+
+.slide-show {
+  width: 100%;
+}
+
+.sliderNavItem img {
+  width: 24.57rem;
+}
+
+.slide-img {
+  margin-top: 15.2rem;
+}
+
+.slide-show-box .positionSliderNav {
+  width: 100%;
+  position: absolute;
+  bottom: -18rem;
+}
+
+/***********Testimonials Section***********/
+.section-testimonials {
+  margin-top: 36.6rem;
+  padding: 7.8rem 0 8.2rem 0;
+  background-color: #fafafa;
+}
+
+.mySliderItem {
+  margin-top: 4.1rem;
+  width: 36rem;
+  height: 36.6rem;
+  padding: 5.2rem 2.2rem 5.1rem 3.4rem;
+  border: 0.1rem solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stars {
+  width: 9.6rem;
+}
+
+.testimonial {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+}
