@@ -7,7 +7,7 @@ $(".counter").counterUp({
   time: 1000,
 });
 
-// Slick Slider
+// Slick Slider - Colors
 $(".slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -23,4 +23,11 @@ $(".slider-nav").slick({
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
+});
+
+// Slick Slider - Testimonials
+$(".testimonials-slide").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
 });
