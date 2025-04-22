@@ -29,5 +29,8 @@ $(".slider-nav").slick({
 $(".testimonials-slide").slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
+  // arrows: false,
+  prevArrow: '<i class="fa-solid larr arrows fa-arrow-left"></i>',
+  nextArrow: '<i class="fa-solid rarr arrows fa-arrow-right"></i>',
 });

@@ -84,7 +84,7 @@
     </nav>
 
     <!----------- Hero Section ----------->
-    <section class="section-hero">
+    <section id="section-hero">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -132,12 +132,18 @@
         src="./Images/Hero.png"
         alt="Image of an E-Scooter"
         class="hero-img"
+        data-aos="fade-left"
+        data-aos-duration="1200"
       />
-      <div class="hero-img-background"></div>
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        class="hero-img-background"
+      ></div>
     </section>
 
     <!----------- Features Section ----------->
-    <section class="section-features">
+    <section id="section-features">
       <div class="container">
         <div class="row">
           <div class="col-lg-2">
@@ -189,7 +195,7 @@
     </section>
 
     <!----------- Product Section ----------->
-    <section class="section-product">
+    <section id="section-product">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -266,7 +272,7 @@
     </section>
 
     <!----------- Motor Section ----------->
-    <section class="section-motor">
+    <section id="section-motor">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -285,7 +291,7 @@
     </section>
 
     <!----------- Accessories Section ----------->
-    <section class="section-accessories">
+    <section id="section-accessories">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -400,7 +406,7 @@
     </section>
 
     <!----------- Gallery Section ----------->
-    <section class="section-gallery">
+    <section id="section-gallery">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -443,7 +449,7 @@
     </section>
 
     <!----------- Colors Section ----------->
-    <section class="section-colors">
+    <section id="section-colors">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -503,7 +509,7 @@
     </section>
 
     <!----------- Testimonials Section ----------->
-    <section class="section-testimonials">
+    <section id="section-testimonials">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -536,15 +542,15 @@
                 <div class="testimonial-card">
                   <img src="./Images/Stars.png" alt="Stars" class="stars" />
                   <p class="testimonial">
-                    On the other hand, we denounce with righteous indignation
-                    and dislike men who are so beguiled and demoralized by the
-                    charms of pleasure.
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit quo minus id quod maxime placeat facere
+                    possimus.
                   </p>
                   <div class="author">
-                    <img src="./Images/Testimonials1.png" alt="Person" />
+                    <img src="./Images/Testimonials2.png" alt="Person" />
                     <div class="author-textbox">
-                      <p>Serhiy Hipskyy</p>
-                      <p>CEO Universal</p>
+                      <p>Justus Menke</p>
+                      <p>CEO Eronaman</p>
                     </div>
                   </div>
                 </div>
@@ -554,14 +560,14 @@
                 <div class="testimonial-card">
                   <img src="./Images/Stars.png" alt="Stars" class="stars" />
                   <p class="testimonial">
-                    On the other hand, we denounce with righteous indignation
-                    and dislike men who are so beguiled and demoralized by the
-                    charms of pleasure.
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores.
                   </p>
                   <div class="author">
-                    <img src="./Images/Testimonials1.png" alt="Person" />
+                    <img src="./Images/Testimonials3.png" alt="Person" />
                     <div class="author-textbox">
-                      <p>Serhiy Hipskyy</p>
+                      <p>Britain Eriksen</p>
                       <p>CEO Universal</p>
                     </div>
                   </div>
@@ -591,26 +597,93 @@
       </div>
     </section>
 
-    <!-- Decoy Newsletter -->
-    <section class="section-newsletter">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2 class="heading-secondary">Subscribe To Newsletter</h2>
-          <p class="sub-heading">
-            Subscribe to our newsletter to get amazing offers in future.
-          </p>
+    <!----------- Newsletter Section ----------->
+    <section id="section-newsletter">
+      <div class="contain">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="heading-secondary">Subscribe To Newsletter</h2>
+            <p class="sub-heading">
+              Subscribe to our newsletter to get amazing offers in future.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 center">
-          <img
-            src="./Images/Screenshot 2025-04-21 165609.png"
-            alt="email"
-            class="email"
-          />
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="#">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email."
+                required
+              />
+              <input type="submit" value="Get start" />
+            </form>
+          </div>
         </div>
       </div>
     </section>
+
+    <!----------- Footer ----------->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-content">
+              <div class="footer-textbox">
+                <h3 class="footer-title">About</h3>
+
+                <a href="#">Company</a>
+                <a href="#">Teams</a>
+                <a href="#">Profile</a>
+                <a href="#">Careers</a>
+              </div>
+
+              <div class="footer-textbox">
+                <h3 class="footer-title">Resources</h3>
+
+                <a href="#">Contact</a>
+                <a href="#">Application</a>
+                <a href="#">FQA Features</a>
+              </div>
+
+              <div class="footer-textbox">
+                <h3 class="footer-title">Legals</h3>
+
+                <a href="#">Copyright Privacy</a>
+                <a href="#">Policy Disclaimer</a>
+                <a href="#">Terms</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="socials">
+                <a href="#"><i class="fa-brands facebook fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands twitter fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands instagram fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="copyright">
+                &copy; Copyright 2021. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Images/FooterScooter.png"
+        alt="Scooter"
+        class="footer-scooter"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      />
+    </footer>
 
     <!-- Bootstrap Integration - Javascript -->
     <script
@@ -638,6 +711,12 @@
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Fonts from Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a2704de061.js"
+      crossorigin="anonymous"
     ></script>
 
     <!-- Custom Script -->

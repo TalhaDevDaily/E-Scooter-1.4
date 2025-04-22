@@ -1,4 +1,4 @@
-/***********Navigation Bar***********/
+/*********** Navigation Bar ***********/
 .main-nav {
   padding: 2.6rem 0;
   border-bottom: 0.1rem solid #eae8f3;
@@ -58,8 +58,8 @@
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-/***********Hero Section***********/
-.section-hero {
+/*********** Hero Section ***********/
+#section-hero {
   margin-top: 8.4rem;
   position: relative;
 }
@@ -246,10 +246,10 @@ button:hover .button-text {
   right: 0;
   z-index: 1000;
   transition: all linear 0.4s;
-  animation: slideInFromRight 1s ease-out forwards;
+  /* animation: slideInFromRight 1s ease-out forwards; */
 }
 
-@keyframes slideInFromRight {
+/* @keyframes slideInFromRight {
   from {
     transform: translateX(50%);
     opacity: 0;
@@ -258,31 +258,32 @@ button:hover .button-text {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 .hero-img-background {
   position: absolute;
   content: "";
-  width: 100rem;
-  height: 56rem;
-  border-radius: 30rem;
+  width: 55.8rem;
+  height: 51rem;
+  border-top-left-radius: 30rem;
+  border-bottom-left-radius: 30rem;
   background-color: #dbdbdb;
   top: 6rem;
-  right: -49rem;
-  animation: second 1s ease-out forwards;
+  right: 0rem;
+  /* animation: second 1s ease-out forwards; */
 }
 
-@keyframes second {
+/* @keyframes second {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
   }
-}
+} */
 
-/***********Features Section***********/
-.section-features {
+/*********** Features Section ***********/
+#section-features {
   margin-top: 20.9rem;
 }
 
@@ -311,8 +312,8 @@ button:hover .button-text {
   font-size: 1.3rem;
 }
 
-/***********Product Section***********/
-.section-product {
+/*********** Product Section ***********/
+#section-product {
   margin-top: 12.7rem;
 }
 
@@ -350,8 +351,8 @@ button:hover .button-text {
   align-self: center;
 }
 
-/***********Motor Section***********/
-.section-motor {
+/*********** Motor Section ***********/
+#section-motor {
   margin-top: 24.8rem;
 }
 
@@ -364,8 +365,8 @@ button:hover .button-text {
   transition: all linear 0.4s;
 }
 
-/***********Accessories Section***********/
-.section-accessories {
+/*********** Accessories Section ***********/
+#section-accessories {
   margin-top: 31.5rem;
 }
 
@@ -416,8 +417,8 @@ button:hover .button-text {
   font-weight: bold !important;
 }
 
-/***********Gallery Section***********/
-.section-gallery {
+/*********** Gallery Section ***********/
+#section-gallery {
   margin-top: 12.7rem;
 }
 
@@ -457,8 +458,8 @@ button:hover .button-text {
   align-items: center;
 }
 
-/***********Colors Section***********/
-.section-colors {
+/*********** Colors Section ***********/
+#section-colors {
   margin-top: 12.8rem;
 }
 
@@ -493,11 +494,15 @@ button:hover .button-text {
   bottom: -18rem;
 }
 
-/***********Testimonials Section***********/
-.section-testimonials {
+/*********** Testimonials Section ***********/
+#section-testimonials {
   margin-top: 36.6rem;
-  padding: 7.8rem 0 8.2rem 0;
+  padding: 7.8rem 0 16.7rem 0;
   background-color: #fafafa;
+}
+
+.testimonials-slide {
+  position: relative;
 }
 
 .testimonial-card {
@@ -544,4 +549,144 @@ button:hover .button-text {
 .author-textbox p:nth-child(2) {
   font-size: 1.4rem !important;
   font-weight: 400;
+}
+
+.arrows {
+  /* display: inline-block; */
+  font-size: 2.5rem;
+  border-radius: 4rem;
+  padding: 1rem 1.2rem;
+  color: #42454a;
+  border: 0.1rem solid #42454a;
+  transition: all linear 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows:hover {
+  color: #fff;
+  background-color: #42454a;
+}
+
+.larr {
+  position: absolute;
+  bottom: -25%;
+  left: 45%;
+}
+
+.rarr {
+  position: absolute;
+  bottom: -25%;
+  right: 45%;
+}
+
+/*********** Newsletter Section ***********/
+#section-newsletter {
+  padding-top: 12.1rem;
+  padding-bottom: 12.7rem;
+}
+
+form {
+  margin-top: 5.9rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 40rem 19.6rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+input {
+  height: 8.1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 2.6rem 3.8rem;
+}
+
+form input:last-child {
+  background-color: #42454a;
+  color: #fff;
+  padding: 0;
+}
+
+/*********** Footer ***********/
+footer {
+  padding-top: 10rem;
+  background-color: #42454a;
+  position: relative;
+}
+
+.footer-content {
+  display: grid;
+  justify-self: end;
+  grid-template-columns: 10rem 10.7rem 13.5rem;
+  gap: 10.5rem;
+}
+
+.footer-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.footer-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer-textbox a {
+  font-size: 1.6rem;
+  color: #42454a;
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  gap: 1.6rem;
+  justify-self: end;
+  font-size: 3.5rem;
+}
+
+.facebook {
+  color: #fff;
+  transition: color linear 0.3s;
+}
+
+.facebook:hover {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #fff;
+  transition: color linear 0.3s;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.instagram {
+  color: #fff;
+  transition: color linear 0.3s;
+}
+
+.instagram:hover {
+  color: #c13584;
+}
+
+.copyright {
+  margin-top: 10rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.footer-scooter {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 73rem;
 }
