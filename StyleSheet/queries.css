@@ -127,6 +127,16 @@
     justify-self: center;
   }
 
+  /*********** Features Section ***********/
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .feature {
+    width: 24.5rem;
+  }
+
   /*********** Product Section ***********/
   .product-img {
     width: 57.8rem;
@@ -136,9 +146,28 @@
 
   /*********** Accessories Section ***********/
   .accessories1 {
-    width: 30rem;
-    top: 44%;
-    left: 160%;
+    width: 67rem;
+    top: 20%;
+    left: 43%;
+  }
+
+  .accessories2 {
+    width: 62.9rem;
+  }
+
+  .gallery-img-1 {
+    margin-top: 10rem;
+    width: 80rem;
+  }
+
+  .gallery-img-2 {
+    margin-top: 6rem;
+    width: 80rem;
+  }
+
+  .gallery-img-3 {
+    margin-top: 6rem;
+    width: 80rem;
   }
 }
 

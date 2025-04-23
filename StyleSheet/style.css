@@ -286,6 +286,13 @@ button:hover .button-text {
   margin-top: 20.9rem;
 }
 
+.features {
+  display: grid;
+  justify-self: center;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .feature {
   width: 17.5rem;
   height: 13.7rem;
@@ -419,6 +426,12 @@ button:hover .button-text {
 /*********** Gallery Section ***********/
 #section-gallery {
   margin-top: 12.7rem;
+}
+
+.gallery-centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gallery-img-1 {
