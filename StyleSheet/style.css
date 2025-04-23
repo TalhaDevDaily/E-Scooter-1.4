@@ -240,7 +240,6 @@ button:hover .button-text {
 .hero-img {
   display: inline-block;
   width: 85.6rem;
-  height: 64.6rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -358,6 +357,8 @@ button:hover .button-text {
 
 .motor {
   margin-top: 4.9rem;
+  display: flex;
+  justify-content: center;
 }
 
 .motor:hover {
@@ -368,6 +369,7 @@ button:hover .button-text {
 /*********** Accessories Section ***********/
 #section-accessories {
   margin-top: 31.5rem;
+  position: relative;
 }
 
 .accessories-info {
@@ -377,7 +379,6 @@ button:hover .button-text {
   flex-direction: column;
   gap: 3.4rem;
   width: 35rem;
-  position: relative;
 }
 
 .flex-end {
@@ -386,18 +387,16 @@ button:hover .button-text {
 
 .accessories1 {
   position: absolute;
-  width: 136.7rem;
-  top: 30%;
-  left: 300%;
-  scale: 2.5;
+  width: 87.8rem;
+  top: 14%;
+  left: 49%;
 }
 
 .accessories2 {
   position: absolute;
-  width: 136.7rem;
-  top: 30%;
-  left: -313%;
-  scale: 2.5;
+  width: 77.9rem;
+  top: 60%;
+  left: 0;
 }
 
 .accessories-message {
