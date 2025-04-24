@@ -221,24 +221,24 @@
   .footer-scooter {
     width: 48rem;
   }
+}
 
-  /**************************/
-  /* BELOW 704px (Smaller Tablets) */
-  /**************************/
+/**************************/
+/* BELOW 704px (Smaller Tablets) */
+/**************************/
 
-  /*********** Hero Section ***********/
-  @media (max-width: 44em) {
-    .mobile-hero-image {
-      display: block;
-    }
+/*********** Hero Section ***********/
+@media (max-width: 44em) {
+  .mobile-hero-image {
+    display: block;
+  }
 
-    .hero-img {
-      display: none;
-    }
+  .hero-img {
+    display: none;
+  }
 
-    .hero-img-background {
-      display: none;
-    }
+  .hero-img-background {
+    display: none;
   }
 
   /*********** Features Section ***********/
